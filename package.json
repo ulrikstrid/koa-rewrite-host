@@ -1,0 +1,27 @@
+{
+  "name": "koa-rewrite-host",
+  "description": "URL rewrite middleware for koa depending on host",
+  "repository": "koajs/rewrite",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --watch",
+    "test:ci": "jest --coverage"
+  },
+  "keywords": ["koa", "middleware", "rewrite", "url", "host"],
+  "files": ["index.js"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^22.2.2",
+    "@types/koa": "^2.0.44",
+    "@types/supertest": "^2.0.4",
+    "jest": "^22.4.3",
+    "koa": "^2.5.0",
+    "supertest": "^3.0.0",
+    "ts-jest": "^22.4.2",
+    "typescript": "^2.8.1"
+  },
+  "engines": {
+    "node": ">= 8"
+  }
+}
