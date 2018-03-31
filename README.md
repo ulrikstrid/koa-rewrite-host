@@ -1,5 +1,7 @@
 # koa-rewrite-host
 
+[![CircleCI](https://circleci.com/gh/ulrikstrid/koa-rewrite-host/tree/master.svg?style=svg)](https://circleci.com/gh/ulrikstrid/koa-rewrite-host/tree/master)
+
 URL rewrite middleware for koa depending on host.
 
 **_Notice: only supports `koa@2`._**
