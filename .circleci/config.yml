@@ -30,10 +30,21 @@ jobs:
         
       # run tests!
       - run:
-          name: Test suite
+          name: "Test suite"
           command: yarn test:ci
           environment:
             JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+
+      - run:
+          name: "Add NPM token"
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+
+      - deploy:
+          name: "Publish to npm"
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              npm publish
+            fi
 
       - store_test_results:
           path: reports
