@@ -29,4 +29,14 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: yarn test:ci
+      - run:
+          name: Test suite
+          command: yarn test:ci
+          environment:
+            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+
+      - store_test_results:
+          path: reports
+      
+      - store_artifacts:
+          path: coverage

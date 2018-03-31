@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --watch",
-    "test:ci": "jest --coverage"
+    "test:ci": "jest --coverage --ci --testResultsProcessor='jest-junit'"
   },
   "keywords": ["koa", "middleware", "rewrite", "url", "host"],
   "files": ["index.js"],
@@ -16,6 +16,7 @@
     "@types/koa": "^2.0.44",
     "@types/supertest": "^2.0.4",
     "jest": "^22.4.3",
+    "jest-junit": "^3.6.0",
     "koa": "^2.5.0",
     "supertest": "^3.0.0",
     "ts-jest": "^22.4.2",
