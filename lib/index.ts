@@ -1,4 +1,4 @@
-import * as Koa from "koa";
+import Koa = require("koa");
 
 /**
  * Rewrite `host` to `mount`.

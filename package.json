@@ -3,7 +3,7 @@
   "description": "URL rewrite middleware for koa depending on host",
   "repository": "ulrikstrid/koa-rewrite-host",
   "author": "Ulrik Strid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "build": "tsc",
     "test": "jest --watch",
